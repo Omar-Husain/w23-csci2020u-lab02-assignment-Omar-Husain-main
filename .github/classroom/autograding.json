@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Test student code",
+      "setup": "chmod +x mvnw",
+      "run": "./mvnw test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "Verify test file is untouched",
+      "setup": "",
+      "run": "md5sum -c -",
+      "input": "2b517b986e18dc6a667f6c36e175aeb0 *src/test/java/TestEchoResource.java",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
